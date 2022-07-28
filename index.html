@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jecho的主页</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        background: url(img/bg.jpg) center no-repeat;
+        background-size: cover;
+        /* background: linear-gradient(135deg, #4bc0c8, #c779d0, #feac5e); */
+      }
+
+      .box1 {
+        height: 70vh;
+        width: 70%;
+        max-width: 760px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: rgb(0 0 0/20%) 0px 2px 1px -1px,
+          rgb(0 0 0/14%) 0px 1px 1px 0px, rgb(0 0 0/12%) 0px 1px 3px 0px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+        text-align: justify;
+        color: #333;
+        font-size: 17px;
+        line-height: 1.7;
+        letter-spacing: 0.034em;
+        font-family: "思源黑体";
+        overflow-y: scroll;
+        /* overflow:hidden; */
+        text-align: center;
+      }
+
+      #box1 {
+        line-height: 0.8;
+        text-transform: uppercase;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .box2 {
+        line-height: 0.5;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      img {
+        border-radius: 15px;
+      }
+
+      .txt {
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        background: rgba(135, 128, 128, 0.1);
+        display: flex;
+        position: relative;
+        transition: 0.5s;
+        border-radius: 15px;
+      }
+
+      hr {
+        height: 2px;
+        display: flex;
+        background: rgba(0, 0, 0, 0.5);
+        margin: 20px 25px;
+        transition: 0.5s;
+        border-radius: 100px;
+      }
+
+      a {
+        color: #216cd3;
+        padding-top: 15px;
+        text-decoration: 2px dashed;
+      }
+
+      a:hover {
+        font-size: 21px;
+        font-weight: 1000;
+        transition: 0.2s;
+      }
+
+      .href {
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        position: relative;
+        border-radius: 15px;
+      }
+
+      .href:hover {
+        transition: 0.5s;
+        background: rgba(83, 180, 232, 0.1);
+        box-shadow: rgb(0 0 0/20%) 0px 2px 1px -1px,
+          rgb(0 0 0/14%) 0px 1px 1px 0px, rgb(0 0 0/12%) 0px 1px 2px 0px;
+      }
+      .box1::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+
+    <div class="box1">
+      <div id="box1">
+        <h2>欢迎来到我的网站!</h2>
+        <h4>Welcome to my website</h4>
+        <p></p>
+      </div>
+      <hr />
+      <div class="txt">
+        <p>
+          很高兴您能点开这个网站，建立这个网站的初衷也是因为在B站上看到了康文昌老师的视频，从中受益，进而萌生了去做一个自己网站的想法，当然这绝对不是为了完成作业（狗头）
+        </p>
+        <p>
+          建立这个网页说实话没有想好去写什么内容，所以先放几个我个人在学习过程中所用到的网站，希望您能在这些网站及工具中找到解决问题的方法或者灵感哦！
+        </p>
+      </div>
+      <hr />
+      <!-- <div class="line"></div> -->
+      <div class="href">
+        <a href="https://www.runoob.com/" target="_blank">菜鸟教程</a>
+        <p>
+          一个学习多门编程语言的网站，非常系统全面，可以当作一个技术手册来使用
+        </p>
+      </div>
+      <div class="href">
+        <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a>
+        <p>内容超级丰富的视频平台，当然也是学习平台，懂得都懂哈哈哈</p>
+      </div>
+      <div class="href">
+        <a
+          href="https://codingfantasy.com/games/flexboxadventure/play?from=from_parent_mindnote"
+          target="_blank"
+          >Codingfantasy</a
+        >
+        <p>一个通过游戏学习CSS的网站</p>
+      </div>
+      <div class="href">
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+        <p>MDN是一个技术社区，在这里面你可以找到许多技术文档，供您参考学习</p>
+      </div>
+      <div class="href">
+        <a href="https://juejin.cn/" target="_blank">掘金</a>
+        <p>
+          “代码不止，掘金不停”，这是一个面向全球中文开发者的技术内容分享与交流平台，在社区里有许多博主发表文章，您可以随时浏览充实自己
+        </p>
+      </div>
+      <div>内容太少，持续更新中...</div>
+    </div>
+    <div class="box2">
+      <img
+        style="width: 80px; height: 80px"
+        src="https://s1.328888.xyz/2022/07/25/DjEck.jpg"
+        alt="这是一个网站logo"
+      />
+      <p>Jecho's Website</p>
+    </div>
+  </body>
+</html>
